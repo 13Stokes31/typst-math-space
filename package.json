@@ -1,8 +1,14 @@
 {
   "name": "typst-math-space",
   "displayName": "Typst Math Space",
-  "description": "En ficheros .typ: al escribir un espacio dentro de $$ coloca el cursor entre dos espacios, listo para escribir la expresión matemática inline.",
+  "description": "In .typ files: typing a space inside $$ places the cursor between two spaces, ready to write an inline math expression.",
   "version": "0.0.2",
+  "publisher": "13Stokes31",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/13Stokes31/typst-math-space"
+  },
   "engines": {
     "vscode": "^1.107.0"
   },

@@ -1,7 +1,27 @@
-# Dólar Inteligente
+# Typst Math Space
 
-Esta extensión añade espacios automáticos entre símbolos de dólar.
+VSCodium/VS Code extension for writing inline math in [Typst](https://typst.app) more comfortably.
 
-## Características
-* Al escribir un espacio entre `$$`, se convierte automáticamente en `$  $`.
-* El cursor se posiciona en el centro.
+## What it does
+
+In Typst, inline math is written as `$ expression $` — with spaces inside the dollar signs.
+
+When you type `$`, tinymist auto-closes it to `$$`. This extension handles the next step: as soon as you type a space inside `$$`, it expands to `$ | $` with the cursor positioned between the two spaces, ready to type the expression.
+
+**Before:** `$$` → type space → `$ $` (cursor in wrong place)  
+**After:** `$$` → type space → `$ | $` (cursor centered, ready to write)
+
+## Usage
+
+1. Open a `.typ` file.
+2. Type `$` — tinymist closes it to `$$`.
+3. Type a space — the extension places the cursor between two spaces: `$ | $`.
+4. Write your expression, e.g. `$ x^2 + 1 $`.
+
+## Requirements
+
+- [Tinymist](https://open-vsx.org/extension/myriad-dreamin/tinymist) for Typst language support and auto-closing of `$`.
+
+## License
+
+MIT
