@@ -38,14 +38,17 @@ exports.deactivate = deactivate;
 const vscode = __importStar(require("vscode"));
 function activate(context) {
     const changeListener = vscode.workspace.onDidChangeTextDocument((event) => {
-        if (event.document.languageId !== 'typst')
+        if (event.document.languageId !== 'typst') {
             return;
+        }
         const editor = vscode.window.activeTextEditor;
-        if (!editor || event.contentChanges.length === 0)
+        if (!editor || event.contentChanges.length === 0) {
             return;
+        }
         const change = event.contentChanges[0];
-        if (change.text !== ' ')
+        if (change.text !== ' ') {
             return;
+        }
         const document = editor.document;
         const position = editor.selection.active;
         const lineText = document.lineAt(position.line).text;

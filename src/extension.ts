@@ -2,13 +2,13 @@ import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
     const changeListener = vscode.workspace.onDidChangeTextDocument((event) => {
-        if (event.document.languageId !== 'typst') return;
+        if (event.document.languageId !== 'typst') {return;}
 
         const editor = vscode.window.activeTextEditor;
-        if (!editor || event.contentChanges.length === 0) return;
+        if (!editor || event.contentChanges.length === 0) {return;}
 
         const change = event.contentChanges[0];
-        if (change.text !== ' ') return;
+        if (change.text !== ' ') {return;}
 
         const document = editor.document;
         const position = editor.selection.active;

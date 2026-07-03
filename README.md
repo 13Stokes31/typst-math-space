@@ -1,10 +1,10 @@
 # Typst Math Space
 
-VSCodium/VS Code extension for writing inline math in [Typst](https://typst.app) more comfortably.
+VSCodium/VS Code extension for writing math blocks in [Typst](https://typst.app) more comfortably.
 
 ## What it does
 
-In Typst, inline math is written as `$ expression $` — with spaces inside the dollar signs.
+In Typst, `$expression$` is inline math, and adding spaces inside the dollar signs — `$ expression $` — displays it as a math block.
 
 When you type `$`, tinymist auto-closes it to `$$`. This extension handles the next step: as soon as you type a space inside `$$`, it expands to `$ | $` with the cursor positioned between the two spaces, ready to type the expression.
 

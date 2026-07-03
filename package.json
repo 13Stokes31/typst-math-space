@@ -1,7 +1,7 @@
 {
   "name": "typst-math-space",
   "displayName": "Typst Math Space",
-  "description": "In .typ files: typing a space inside $$ places the cursor between two spaces, ready to write an inline math expression.",
+  "description": "In .typ files: typing a space inside $$ places the cursor between two spaces, ready to write a math expression.",
   "version": "0.0.2",
   "publisher": "13Stokes31",
   "license": "MIT",

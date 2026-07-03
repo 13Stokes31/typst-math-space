@@ -1,9 +1,12 @@
 # Change Log
 
-All notable changes to the "dollarssss" extension will be documented in this file.
+## [0.0.2] - 2026-05-21
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- Renamed to **Typst Math Space** (was "dollarssss").
+- Added publisher, MIT license, repository and README.
+- Published on [Open VSX](https://open-vsx.org/extension/13Stokes31/typst-math-space).
 
-## [Unreleased]
+## [0.0.1] - 2026-05-21
 
-- Initial release
+- Initial version: typing a space inside `$$` expands to `$ | $` with the
+  cursor centered between the two spaces.
